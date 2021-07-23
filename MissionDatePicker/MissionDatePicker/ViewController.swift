@@ -11,7 +11,8 @@ class ViewController: UIViewController {
     let timeSelector: Selector = #selector(ViewController.updateTime)
     let interval = 1.0
     var count = 0
-    var alarmTime: String = ""
+    var alarmTime: String?
+    // var alarmTime: String = "" 이렇게하면 시작과 동시에 깜빡임
     @IBOutlet var lblCurrentTime: UILabel!
     @IBOutlet var lblPickerTime: UILabel!
     let formatter1 = DateFormatter()
