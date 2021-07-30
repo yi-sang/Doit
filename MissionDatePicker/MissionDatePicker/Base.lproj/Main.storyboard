@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="선택 시간 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPI-Tu-Dop">
-                                <rect key="frame" x="0.0" y="627" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="627" width="390" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -28,11 +28,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <locale key="locale" localeIdentifier="ko"/>
                                 <connections>
-                                    <action selector="changeDatePicker:" destination="BYZ-38-t0r" eventType="valueChanged" id="M74-Wc-bVd"/>
+                                    <action selector="changeDatePicker:" destination="BYZ-38-t0r" eventType="valueChanged" id="Qlc-oV-DCX"/>
                                 </connections>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="현재 시간 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cn5-iR-Qbd">
-                                <rect key="frame" x="0.0" y="217" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="217" width="390" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -43,13 +43,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="lblCurrentTime" destination="cn5-iR-Qbd" id="107-TZ-Y5u"/>
-                        <outlet property="lblPickerTime" destination="dPI-Tu-Dop" id="jPi-1Y-bta"/>
+                        <outlet property="lblCurrentTime" destination="cn5-iR-Qbd" id="kKp-dP-Tv9"/>
+                        <outlet property="lblPickerTime" destination="dPI-Tu-Dop" id="BEt-Po-VdS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="88.392857142857139"/>
+            <point key="canvasLocation" x="130.76923076923077" y="88.151658767772503"/>
         </scene>
     </scenes>
     <resources>
