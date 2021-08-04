@@ -12,7 +12,7 @@ let NUM_PAGE = 10
 class ViewController: UIViewController {
     @IBOutlet var lblPageNumber: UILabel!
     @IBOutlet var pageControl: UIPageControl!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

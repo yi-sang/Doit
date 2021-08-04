@@ -32,18 +32,23 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         lblImageFileName.text = imageRealFileName[0] // label 초기 실행화면
         imageView.image = imageArray[0] // pickerView 초기 실행화면
     }
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return PICKER_VIEW_COLUMN // 피커 뷰에게 컴포넌트(열)의 수를 넘겨준다.
     }
+    
     func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
         return PICKER_VIEW_HEIGHT // 컴포넌트의 높이를 정수 값으로 넘겨준다.
     }
+    
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return imageFileName.count // 피커 뷰에게 컴포넌트의 행의 수를 넘겨준다.
     }
+    
 //    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
 //        return imageFileName[row] // 열의 타이틀을 문자열 값으로 넘겨준다.
 //    }
+    
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
 //      피커 뷰에 파일명대신 이미지 출력하기
         let imageView = UIImageView(image: imageArray[row])
@@ -52,6 +57,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         // 프레임 크기를 설정한다.
         return imageView
     }
+    
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent componet: Int) {
 //      1열에는 이미지 출력
         if (componet == 1) {

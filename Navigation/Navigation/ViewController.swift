@@ -26,7 +26,7 @@ class ViewController: UIViewController, EditDelegate {
     override func prepare(for seque: UIStoryboardSegue, sender: Any?){
         let editViewController = seque.destination as! EditViewController
         editViewController.textMessage = txMessage.text!
-        editViewController.isOn = isOn
+        /Users/hyle        editViewController.isOn = isOn
         editViewController.isZoom = originZoom
         editViewController.delegate = self
         if seque.identifier == "editButton" {
